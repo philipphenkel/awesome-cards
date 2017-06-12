@@ -1,0 +1,66 @@
+import React from 'react';
+import Paper from './paper.js'
+import PropTypes from 'prop-types';
+
+import {
+  Heading,
+  Image,
+  Text,
+  Layout,
+  Fit,
+  Fill
+} from 'spectacle';
+
+const images = {
+  happy: require('../assets/happy.svg'),
+  problem: require('../assets/problem.svg'),
+  disaster: require('../assets/disaster.svg')
+};
+
+const exampleStyle = {
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginLeft: '5%',
+  marginRight: '5%',
+  marginTop: '4%'
+};
+
+const paperStyle = {
+  backgroundColor: 'rgba(240,240,240,0.85)',
+  boxShadow: '10px 10px 5px rgba(0, 0, 0, 0.2)',
+  borderRadius: '0%',
+  display: 'flex',
+  flexDirection: 'column',
+  align: 'center',
+  padding: '1em',
+  margin: '1em',
+};
+
+class AwesomeCard extends React.Component {
+  render() {
+    return (
+      <div style={paperStyle}>
+        <Heading size={6}>{this.props.question}</Heading>
+        <Layout style={exampleStyle}>
+          <Image src={images.happy} width='20%' height='20%' />
+          <Text margin='20px auto' size={6}>{this.props.awesome}</Text>
+        </Layout>
+        <Layout style={exampleStyle}>
+          <Image src={images.disaster} width='20%' height='20%' />
+          <Text margin='20px auto' size={6}>{this.props.crappy}</Text>
+        </Layout>
+      </div>
+    );
+  }
+}
+
+AwesomeCard.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  question: PropTypes.string.isRequired,
+  awesome: PropTypes.string.isRequired,
+  crappy: PropTypes.string.isRequired,
+};
+
+export default AwesomeCard;
