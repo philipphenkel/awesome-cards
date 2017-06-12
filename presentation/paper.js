@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 
 const paperStyle = {
-  backgroundColor: 'rgba(255,255,255,0.85)',
+  backgroundColor: 'rgba(240,240,240,0.75)',
   boxShadow: '10px 10px 5px rgba(0, 0, 0, 0.2)',
   borderRadius: '0%',
   display: 'flex',
@@ -13,7 +13,6 @@ const paperStyle = {
   padding: '1em',
   margin: '1em',
 };
-
 
 @Radium
 export default class Paper extends Component {
