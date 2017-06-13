@@ -82,6 +82,78 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
+        <Slide>
+          <AwesomeCard
+            question='Suitable process'
+            awesome='Our way of working fits us perfectly.'
+            crappy='Our way of working sucks.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Tech quality '
+            awesome='We’re proud of the quality of our code! It is clean, easy to read, and has great test coverage.'
+            crappy='Our code is a pile of dung, and technical debt is raging out of control.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Value'
+            awesome='We deliver great stuff! We’re proud of it and our stakeholders are really happy.'
+            crappy='We deliver crap. We feel ashamed to deliver it. Our stakeholders hate us.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Speed'
+            awesome='We get stuff done really quickly.No waiting, no delays.'
+            crappy='We never seem to get done with anything.We keep getting stuck or interrupted. Stories keep getting stuck on dependencies.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Mission'
+            awesome='We know exactly why we are here, and we are really excited about it.'
+            crappy='We have no idea why we are here, there is no high level picture or focus. Our so-called mission is completely unclear and uninspiring.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Fun'
+            awesome='We love going to work, and have great fun working together.'
+            crappy='Boooooooring.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Learning'
+            awesome='We’re learning lots of interesting stuff all the time!'
+            crappy='We never have time to learn anything.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Support'
+            awesome='We always get great support &amp; help when we ask for it!'
+            crappy='We keep getting stuck because we can’t get the support &amp; help that we ask for.'
+          />
+        </Slide>
+
+        <Slide>
+          <AwesomeCard
+            question='Pawns or players'
+            awesome='We are in control of our destiny! We decide what to build and how to build it.'
+            crappy='We are just pawns in a game of chess, with no influence over what we build or how we build it.'
+          />
+        </Slide>
+
         <Slide transition={['zoom', 'fade']} >
           <Heading textColor='tertiary' fit caps>More Awesomeness</Heading>
         </Slide>

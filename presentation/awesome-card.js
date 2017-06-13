@@ -8,7 +8,10 @@ import {
   Text,
   Layout,
   Fit,
-  Fill
+  Fill,
+  Table,
+  TableRow,
+  TableItem
 } from 'spectacle';
 
 const images = {
@@ -20,10 +23,15 @@ const images = {
 const exampleStyle = {
   display: 'flex',
   flexDirection: 'row',
+  justifyContent: 'flex-start',
   alignItems: 'center',
   marginLeft: '5%',
   marginRight: '5%',
-  marginTop: '4%'
+  marginTop: '2%'
+};
+
+const imageStyle = {
+  margin: '0px'
 };
 
 class AwesomeCard extends React.Component {
@@ -31,14 +39,16 @@ class AwesomeCard extends React.Component {
     return (
       <Paper>
         <Heading size={6}>{this.props.question}</Heading>
+
         <Layout style={exampleStyle}>
-          <Image src={images.happy} width='20%' height='20%' />
-          <Text margin='20px auto' size={6}>{this.props.awesome}</Text>
+          <Image src={images.happy} style={imageStyle} width='20%' height='20%' />
+          <Text margin='20px auto' textSize='1.0em'>{this.props.awesome}</Text>
         </Layout>
         <Layout style={exampleStyle}>
-          <Image src={images.disaster} width='20%' height='20%' />
-          <Text margin='20px auto' size={6}>{this.props.crappy}</Text>
+          <Image src={images.disaster} style={imageStyle} width='20%' height='20%' />
+          <Text margin='20px auto' textSize='1.0em'>{this.props.crappy}</Text>
         </Layout>
+
       </Paper>
     );
   }
