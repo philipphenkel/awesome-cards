@@ -10,27 +10,19 @@
 import React from 'react';
 
 import {
-  BlockQuote,
-  Cite,
+  Deck,
+  Slide,
+  Heading,
   Table,
   TableRow,
   TableItem,
-  Deck,
-  Heading,
-  ListItem,
-  List,
   Link,
-  Quote,
-  Slide,
-  Text,
-  Image,
-  Layout,
-  Fit,
-  Fill
+  Text
 } from 'spectacle';
 
-import createTheme from 'spectacle/lib/themes/default';
 import AwesomeCard from './awesome-card.js'
+
+import createTheme from 'spectacle/lib/themes/default';
 
 require('normalize.css');
 require('spectacle/lib/themes/default/index.css');
