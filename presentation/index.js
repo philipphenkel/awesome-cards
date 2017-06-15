@@ -150,7 +150,7 @@ export default class Presentation extends React.Component {
           <Heading textColor='tertiary' fit caps>More Awesomeness</Heading>
         </Slide>
 
-        <Slide >
+        <Slide notes='Contributed by X. Optional description goes here.'>
           <AwesomeCard
             question='Your Awesome Card'
             awesome='Example of happy'
