@@ -150,6 +150,14 @@ export default class Presentation extends React.Component {
           <Heading textColor='tertiary' fit caps>More Awesomeness</Heading>
         </Slide>
 
+        <Slide notes='Contributed by Alex Fürstenau'>
+          <AwesomeCard
+            question='Flow'
+            awesome='We have always the right amount of challenging tasks. Neither too difficult nor too easy.'
+            crappy='We have tasks a 6 year old could handle or which are impossible to resolve.'
+          />
+        </Slide>
+
         <Slide notes='Contributed by X. Optional description goes here.'>
           <AwesomeCard
             question='Your Awesome Card'
