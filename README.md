@@ -1,14 +1,18 @@
 # awesome-cards
-Collection of Awesome Cards to run your Squad Health Check
+Collection of [Awesome Cards](https://philipphenkel.github.io/awesome-cards/) to run your [Squad Health Check](https://labs.spotify.com/2014/09/16/squad-health-check-model/)
 
-### Ready-to-run Card Deck
-[awesome-cards slide deck](https://philipphenkel.github.io/awesome-cards/)
+[https://philipphenkel.github.io/awesome-cards/](https://philipphenkel.github.io/awesome-cards/)
 
 ### Spectacle Markup
-The contribution of Awesome Cards is highly appreciated. This can be done by creating an issue or a pull request.
+The contribution of your Awesome Cards is highly appreciated. This can be done by creating an issue or a pull request.
 
 ```jsx
-<Slide notes='Contributed by X. Optional description goes here.'>
+<Slide id='your-awesome-card'>
+  <Notes>
+    Contributed by X.
+    Optional description goes here.
+  </Notes>
+
   <AwesomeCard
     question='Your Awesome Card'
     awesome='Example of happy'

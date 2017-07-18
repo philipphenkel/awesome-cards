@@ -17,7 +17,8 @@ import {
   TableRow,
   TableItem,
   Link,
-  Text
+  Text,
+  Notes
 } from 'spectacle';
 
 import AwesomeCard from './awesome-card.js'
@@ -45,7 +46,7 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={['slide']} transitionDuration={500} theme={theme}>
 
-        <Slide transition={['zoom', 'fade']} bgColor='tertiary' >
+        <Slide id='awesome-cards' transition={['zoom', 'fade']} bgColor='tertiary' >
           <Heading textColor='secondary' caps fit>Awesome Cards</Heading>
           <Text margin='20px auto' textColor='primary'>To run your Squad Health Check</Text>
           <Link href='https://github.com/philipphenkel/awesome-cards'>
@@ -53,7 +54,7 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide id='squad-health-check' transition={['zoom', 'fade']}>
           <Heading textColor='tertiary' fit caps>Squad Health Check</Heading>
           <Text margin='1em' />
           <Text fit margin='0.5em auto' textColor='secondary'>workshop and visualization technique</Text>
@@ -62,11 +63,11 @@ export default class Presentation extends React.Component {
           <Text fit margin='0.5em auto' textColor='secondary'>by assessing various health indicators</Text>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']}>
+        <Slide id='spotify-cards' transition={['zoom', 'fade']}>
           <Heading textColor='tertiary' caps fit>Spotify&apos;s Starter Set</Heading>
         </Slide>
 
-        <Slide>
+        <Slide id='easy-to-release'>
           <AwesomeCard
             question='Easy to release'
             awesome='Releasing is simple, safe, painless and mostly automated.'
@@ -74,7 +75,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='suitable-process'>
           <AwesomeCard
             question='Suitable process'
             awesome='Our way of working fits us perfectly.'
@@ -82,7 +83,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='tech-quality'>
           <AwesomeCard
             question='Tech quality '
             awesome='We’re proud of the quality of our code! It is clean, easy to read, and has great test coverage.'
@@ -90,7 +91,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='value'>
           <AwesomeCard
             question='Value'
             awesome='We deliver great stuff! We’re proud of it and our stakeholders are really happy.'
@@ -98,7 +99,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='speed'>
           <AwesomeCard
             question='Speed'
             awesome='We get stuff done really quickly.No waiting, no delays.'
@@ -106,7 +107,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='mission'>
           <AwesomeCard
             question='Mission'
             awesome='We know exactly why we are here, and we are really excited about it.'
@@ -114,7 +115,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='fun'>
           <AwesomeCard
             question='Fun'
             awesome='We love going to work, and have great fun working together.'
@@ -122,7 +123,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='learning'>
           <AwesomeCard
             question='Learning'
             awesome='We’re learning lots of interesting stuff all the time!'
@@ -130,7 +131,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='support'>
           <AwesomeCard
             question='Support'
             awesome='We always get great support &amp; help when we ask for it!'
@@ -138,7 +139,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide>
+        <Slide id='pawns-or-players'>
           <AwesomeCard
             question='Pawns or players'
             awesome='We are in control of our destiny! We decide what to build and how to build it.'
@@ -146,11 +147,14 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide transition={['zoom', 'fade']} >
+        <Slide id='more-awesomeness' transition={['zoom', 'fade']} >
           <Heading textColor='tertiary' fit caps>More Awesomeness</Heading>
         </Slide>
 
-        <Slide notes='Contributed by Alex Fürstenau'>
+        <Slide id='flow'>
+          <Notes>
+            Contributed by Alex Fürstenau
+          </Notes>
           <AwesomeCard
             question='Flow'
             awesome='We have always the right amount of challenging tasks. Neither too difficult nor too easy.'
@@ -158,7 +162,11 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide notes='Contributed by X. Optional description goes here.'>
+        <Slide id='your-awesome-card'>
+          <Notes>
+            Contributed by X.
+            Optional description goes here.
+          </Notes>
           <AwesomeCard
             question='Your Awesome Card'
             awesome='Example of happy'
@@ -166,13 +174,13 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
-        <Slide transition={['zoom', 'fade']} bgColor='primary'>
+        <Slide id='references' transition={['zoom', 'fade']} bgColor='primary'>
           <Heading size={2} textColor='tertiary' caps>References</Heading>
           <Text margin='1em' />
           <Link href='https://labs.spotify.com/2014/09/16/squad-health-check-model/'>Squad Health Check, Spotify Labs </Link>
         </Slide>
 
-        <Slide transition={['zoom', 'fade']} bgColor='primary'>
+        <Slide id='credits' transition={['zoom', 'fade']} bgColor='primary'>
           <Heading size={2} textColor='tertiary' caps>Credits</Heading>
           <Text margin='1em' />
           <Table>
