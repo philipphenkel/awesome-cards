@@ -162,6 +162,17 @@ export default class Presentation extends React.Component {
           />
         </Slide>
 
+        <Slide id='stakeholders'>
+          <Notes>
+            Inspired by Nicolas Previale
+          </Notes>
+          <AwesomeCard
+            question='Stakeholders'
+            awesome='We meet. We understand what they want and why it is needed. We establish priorities together.'
+            crappy='We don’t know who they are.'
+          />
+        </Slide>
+
         <Slide id='your-awesome-card'>
           <Notes>
             Contributed by X.
